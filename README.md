@@ -14,6 +14,5 @@ This repository contains Docker-related examples and projects.
 ### Build a Docker image
 
 ```bash
-docker run -d -p 3000:3000 basic-docker-setup .
 sudo docker run -d -p 3000:3000 basic-docker-setup .
 # Docker
