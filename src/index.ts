@@ -6,12 +6,15 @@ const app = express();
 app.use(express.json());
 
 const client = new PrismaClient();
+console.log('DATABASE_URL:', process.env.DATABASE_URL);
+
 
 app.get("/", (req, res) => {
     res.json({
         message: "Healthy server"
     })
 })
+
 
 app.post("/", async (req, res) => {
     await client.user.create({
